@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgence Sanitaire | Formulaire d'inscription</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+
+<body>
+    <header>
+    <h1>Formulaire d'inscription</h1>
+    <p>Veuillez remplir le formulaire ci-dessous pour vous inscrire à la distribution des rations et des kits de survie.</p>
+    </header>
+
+    
+    <main>
+        <section>
+            <form method="get">
+                <fieldset>
+                    <legend>Informations personnelles:</legend>
+                    <label for="survivant-nom">Nom de survivant:</label>
+                    <input type="text" id="survivant-nom" name="survivant-nom"   placeholder="Nom de survivant" required>
+
+                    <label for="survivant-prenom">Prénom de survivant:</label>
+                    <input type="text" format="" id="survivant-prenom" name="survivant-prenom"  placeholder="Prénom de survivant" required>
+
+                    <label for="age">Age:</label>
+                    <input type="date" id="age" name="age" min="0" required>
+
+                    <label for="photo">Photo de profil:</label>
+                    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" required>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Informations de connexion:</legend>
+                    <label for="password">Créer un mot de passe (10 a 60 caractères):</label>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe" maxlength="60" minlength="10" required>
+
+                    <label for="password-confirm">Confirmer le mot de passe:</label>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirmer le mot de passe" required>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Centres d'intérêt favoris:</legend>
+                    <select required>
+                        <option value="">Sélectionner une zone de replis par defaut</option>
+                        <option value="ici">ici</option>
+                        <option value="la">la</option>
+                        <option value="labas">la bas</option>
+                        <option value="tresloinlabas">tres loin la bas</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Adresses/Contact: </legend>
+                    <label for="adresse">Adresse:</label>
+                    <textarea id="adresse" name="adresse" required rows="1" cols="30" placeholder=" XX Rue du XXXX 12234 VILLE"></textarea>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@lamanu.fr" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                    <label for="telephone">Téléphone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+12 34 56 78 90" required>
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend>Notifications:</legend>
+                    <label for="alerte-niveau">- Qualité du flux d'alerte par defaut:</label>
+                    <select id="alerte-niveau" name="alerte-niveau" required>
+                        <option value="">Sélectionner un niveau</option>
+                        <option value="faible">Faible</option>
+                        <option value="moyen">Moyen</option>
+                        <option value="élevé">Élevé</option>
+                    </select><br>
+
+                    <label for="newsletter">- Acceptation des conditions d'utilisation (CGU):</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" required><br>
+
+                    <label for="newsletter">- S'inscrire à la newsletter de crise:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </fieldset>
+
+                <button type="submit" id="submit-btn">Valider l'enrolement</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p><a href="./index.html">Retour sur la page d'accueil</a></p>
+        <p>© 2026 La Manu Survie. Tous droits réservés.<br>
+        <a href="./cgu.html">Conditions générales d'utilisation</a> - CGU</p>
+    </footer>
+</body>
+</html>
