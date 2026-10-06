@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header> <!-- Début en-tête du site -->
+        <figure> <!-- IMG : logo_la_manu.png -->
+            <img src="./img/logo_la_manu.png" alt="Logo La Manu" title="Logo La Manu">
+            <figcaption> </figcaption>
+        </figure>
+
+
+       <h1>Les navigateurs web modernes</h1>
+       <nav>
+            <ul id="liste-nav"> <!-- Début navigation ancrée -->
+                <li><a href="#les_nav">Les navigateurs web</a> |</li>
+                <li><a href="#parts_de_marche">Évolution des parts de march</a> |</li>
+                <li><a href="#newletter">Abonnement à la newsletter</a> |</li>
+            </ul> <!-- Fin navigation ancrée -->
+       </nav>
+    </header>  <!-- Fin en-tête du site -->
+
+    <main><!-- Début contenu principal du site -->
+        <h2 id="les_nav">Les navigateurs web</h2><!-- Intro sur les navigateurs -->
+        <h3>Un peu d'histoire</h3>
+        <p>Le premier navigateur date de 1990. En 1993, le premier navigateur stable est diffusé en masse. <strong>Internet Explorer</strong> apparaît en 1995. À partir des années 2000, Internet Explorer devient le leader du marché en grande partie car, il est installé par défaut, sur tous les micro-ordinateurs sous Windows.<br>
+            À partir de 2005, <strong>Mozilla FireFox</strong> commence à détrôner Internet Explorer, puis, à partir de 2012, c’est au tour de <strong>Google Chrome</strong> de devenir le navigateur le plus utilisé dans le monde. <strong>Microsoft Edge</strong> remplace Internet Explorer en 2015 et depuis 2020 ils est construit sur la même base Chromium que Google Chrome. <strong>Opera</strong> existe depuis 1994 et se maintient notamment grâce à Opera Mini, le navigateur mobile.
+        Les principaux navigateurs
+        Les navigateurs listés ci-dessous représentent les plus grandes parts de marché. Certains ne fonctionnent que sur desktop (Internet Explorer) tandis que d'autres fonctionnent aussi bien sur desktop que sur mobile (Google Chrome, Safari...).</p>
+        <figure> <!-- IMG : main-desktop-browser-logos.png -->
+            <img src="./img/main-desktop-browser-logos.png" alt="image de navigateur" title="image de navigateur">
+        </figure>  
+        <ul>
+            <li>Google Chrome</li>
+            <li>Microsoft Edge / Internet Explorer</li>
+            <li>Mozilla Firefox</li>
+            <li>Apple Safari</li>
+            <li>Opera</li>
+        </ul>
+
+        <h2 id="parts_de_marche">Évolution des parts de marché</h2>
+        <table class="custom-table"><!-- Tableau des parts de marché -->
+            <caption>Les données recueillies proviennent des statistiques du site <a href="https://www.w3schools.com/">W3Schools</a> qui recueille plus de 50 millions de visite par mois.</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Année</p>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="./img/logo-chrome.png" title="image du logo de google chrome" alt="image du logo de google chrome">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <p>Google Chrome</p>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="./img/logo-edge.png" title="image du logo de microsoft edge" alt="image du logo de microsoft edge">
+                            <img src="./img/logo-ie.png" title="image du logo de internet explorer" alt="image du logo de internet explorer">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <p>Microsoft Edge / Internet Exporer</p>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="./img/logo-firefox.png" title="image du logo de firefox" alt="image du logo de firefox">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <p>Mozilla Firefox</p>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="./img/logo-safari.png" title="image du logo de safari" alt="image du logo de safari">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <p>Apple Safari</p>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="./img/logo-opera.png" title="image du logo de opera" alt="image du logo de opera">
+                            <figcaption> </figcaption>
+                        </figure>
+                        <p>Opera</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>2020</th>
+                    <td>80.7%</td>
+                    <td>3.5%</td>
+                    <td>8.5%</td>
+                    <td>4.1%</td>
+                    <td>1.6%</td>
+                </tr>
+                <tr>
+                    <th>2019</th>
+                    <td>80.4%</td>
+                    <td>3.6%</td>
+                    <td>9.5%</td>
+                    <td>3.3%</td>
+                    <td>1.7%</td>
+                </tr>
+                <tr>
+                    <th>2018</th>
+                    <td>79.0%</td>
+                    <td>3.9%</td>
+                    <td>10.9%</td>
+                    <td>3.2%</td>
+                    <td>1.6%</td>
+                </tr>
+            </tbody>
+            <tfoot> Les chiffres correspondent au mois de mais des années</tfoot>
+        </table>
+
+        <p><a href="index.html" download="./downloads/browser-FR-monthly-202002-202007-bar.csv">Télécharger le fichier CSV des parts de marché des navigateurs en France sur la période février-juillet 2020</a></p>
+
+
+    </main> <!-- Fin contenu principal du site -->
+
+    <footer><!-- Footer du site -->
+        <h2 id="newsletter">Abonnez-vous a notre newsletter</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Formulaire d'incription a la newsletter</legend>
+                <label>Prénom:</label>
+                <input type="text" id="prenom" name="prenom" placeholder="John" required>
+
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@lamanu.fr" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+
+                <label>J'accepte la politique de confidentialité</label>
+                <input type="checkbox" id="politique-de-confidentialite" name="politique-de-confidentialite" required>
+            </fieldset>
+            <button type="submit" id="submit-btn">S'enregistrer</button>
+        </form>
+        
+        <p>Site réalisé par La Manu</p>
+    </footer> 
+</body>
+</html>
