@@ -1,0 +1,29 @@
+ALGORITHME / calculateur billet sncf
+
+
+VARIABLES:
+	age : ENTIER
+	a_carte_reduction : BOOLEEN
+	prix : REEL
+CONSTANTE :
+	PRIX_BASE = 100.0
+
+
+DEBUT:
+	afficher("Bonjour ! Entrez l'âge du voyageur")
+	choix(age)
+	afficher("Le voyageur possède-t-il une carte de réduction (VRAI/FAUX)")
+	choix(a_carte_reduction)
+
+	si age <= 12 ALORS:
+		prix <- 0.0
+	sinon si age <=25 ET age >= 12 alors:
+		prix <- PRIX_BASE * 0.50
+		SI a_carte_reduction == VRAI alors:
+			prix <- prix * 0.90
+	sinon:
+		prix <- PRIX_BASE
+		si a_carte_reduction == VRAI alors:
+			prix <- prix * 0.80
+	fin si
+fin

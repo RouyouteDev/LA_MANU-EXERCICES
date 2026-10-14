@@ -1,0 +1,7 @@
+ALGORITHME / Boucles et Listes (Listes et Tableaux)
+
+// --- VARIABLES --- //
+VARIABLES:
+    pws_is_ok : BOOLEEN
+    pws : ENTIER
+    
