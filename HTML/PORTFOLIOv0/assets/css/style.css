@@ -6,6 +6,11 @@
     color : #FCF1D0;
 }
 
+a {
+    text-decoration: none;
+    color: #FCF1D0;
+}
+
 .bold {
   font-family: 'Iosevka Charon', monospace;
   font-weight: 700;
@@ -21,10 +26,9 @@
 header {
     background-color: #010736;
     justify-content: space-between;
+    color: rgb(235 235 7);
     align-items: center;
     display: flex;
-    padding: 10px;
-    background-color: #010736;
     * {
         background-color: #010736;
     }
@@ -43,18 +47,26 @@ header {
         display: inline-block;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: -25px;
+        a {
+            text-decoration: none;
+            color: #FCF1D0;
+        }
         img {
-            transform: translate(-10px,5px)
+            transform: translate(-20px,15px)
         }
     }
-    #accueil {
-        color: rgb(235 235 7);
-        margin-right: 150px;
+    li#accueil {
         text-decoration: underline;
+        margin-right: 150px;
     }
     h1 {
         font-size: 40px;
         margin-left: 20px;
+    }
+    a:hover{
+        color: rgb(235 235 7);
+        text-decoration: underline;
     }
 }
 
@@ -121,4 +133,22 @@ button {
         padding-left: 10px;
         padding-right: 10px;
     }
+}
+
+div#container{
+    float: left;
+    padding: 10px;
+    margin-right: 40px;
+    height: 590px;
+    width: 50px;
+    background-color: #FCF1D0;
+}
+
+footer {
+    background-color: #010736;
+    border-radius: 5px;
+    padding: 0px 10px;
+    position: fixed;
+    bottom:5px;
+    right: 10px;
 }
