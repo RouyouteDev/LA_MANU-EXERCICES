@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail d'urgence - Inscription</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <p>
+                <a href="index.html">Informations</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="cgu.html">CGU</a>
+                </p>
+            </ul>
+        </nav>
+        <figure>
+            <img src="assets/img/kit_global.jpg" height="200px" width="250px">
+            <figcaption>Kit de survie ultime</figcaption>
+        </figure>
+    </header>
+    <main>
+        <h1>Formulaire d'inscription pour le portail d'urgence</h1>
+        <p>Enregistrez-vous dès à présent via notre plateforme sécurisée ci-dessous pour valider votre éligibilité à la distribution des rations et des kits dans le centre de ravitaillement le plus proche de chez vous.</p>
+        <p>Pour toute information veuillez vous rendre sur la page d'<a href="index.html">accueil</a>.</p>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>1. Informations personnelles</legend>
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" required placeholder="Votre Pseudo">
+                <label for="mail">Adresse e-mail :</label>
+                <input type="email" id="mail" name="mail" required placeholder="votre@email.com"><br><br>
+                <label for="age">Âge :</label>
+                <input type="date" id="age" name="age" required min="18" max="100" placeholder="Votre âge">
+                <label for="photo">Photo de profil :</label>
+                <input type="file" id="photo" name="photo" accept="image/*" placeholder="Votre photo de profil"><br><br>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required placeholder="Mot de passe" maxlength="30" minlength="10">
+                <label for="confirm_password">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirmer le mot de passe">
+            </fieldset>
+            <fieldset>
+                <legend>2. Préférences</legend>
+                <label for="flux">Qualité de lecture des flux d'alerte par défaut</label>
+                <select id="flux" name="flux" required>
+                    <option value="soft">Minimum</option>
+                    <option value="medium">Moyenne</option>
+                    <option value="hard">Élevée</option>
+                    <option value="extreme">Extrême</option>
+                </select>
+                <label for="combat">Style de combat préféré :</label>
+                <select id="combat" name="combat" required>
+                    <option value="prudent">Rapproché</option>
+                    <option value="long">Longue Distance</option>
+                    <option value="strategique">Stratégique</option>
+                </select>
+                <label for="base">Type de replis préféré :</label>
+                <select id="base" name="base" required>
+                    <option value="city">Ville</option>
+                    <option value="campagne">Campagne</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>3. Notifications et communication</legend>
+                <label for="newsletter">Souhaitez-vous recevoir des notifications d'alerte par e-mail ?</label>
+                <input type="checkbox" id="newsletter" name="newsletter" required>
+                <label for="cgu">J'accepte les <a href="cgu.html">Conditions Générales d'Utilisation</a> :</label>
+                <input type="checkbox" id="cgu" name="cgu" required>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <p>
+                <a href="index.html">Informations</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="cgu.html">CGU</a>
+                </p>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

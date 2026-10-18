@@ -1,0 +1,93 @@
+#Exercice 1
+
+produits <- ["Clavier Gamer", "Casque Sans Fil", "Souris Ergonomique", "Écran 27 Pouces", "Tapis de Souris"]
+
+1 - C'est 2
+2 - 
+Variables
+    produits <- ["Clavier Gamer", "Casque Sans Fil", "Souris Ergonomique", "Écran 27 Pouces", "Tapis de Souris"]
+
+    debut
+        pour i ALLANT DE 0 A 4 faire
+            afficher("Article N°",i,"- ",produits[i])
+        fin pour
+    fin
+3 - 
+Variables
+    produits <- ["Clavier Gamer", "Casque Sans Fil", "Souris Ergonomique", "Écran 27 Pouces", "Tapis de Souris"]
+
+    debut
+        pour i ALLANT DE 4 A 0 PAS DE -1 faire
+            afficher("Article N°",i,"- ",produits[i])
+        fin pour
+    fin
+
+#Exercice 2
+
+1 -
+2 -
+Variables
+    notes <- [12.5, 08.0, 16.0, 09.5, 14.0, 18.5]
+    moyenne <- 0.0
+    compteur <- 0
+    note_max <- notes[0]
+    note_min <- notes[0]
+    etudiant_ajourne <- 0
+
+    debut
+        pour i ALLANT DE 0 A 5 faire
+            moyenne <- notes[i] + moyenne
+            compteur <- compteur + 1
+            si notes[i] > note_max alors
+                note_max <- notes[i]
+            fin si
+            si notes[i]< note_min alors
+                note_min <- notes[i]
+            fin si
+            si notes[i] < 10 alors
+                etudiant_ajourne <- etudiant_ajourne + 1
+            fin si
+        fin pour
+
+        moyenne <- moyenne / compteur
+        afficher("Moyenne des notes : ",moyenne)
+        afficher("Étudiant ajourné(s) :",etudiant_ajourne)
+        afficher("Note maximale : ",note_max)
+        afficher("Note minimale : ",note_min)
+    fin
+
+#Exercice 3
+
+Variables
+    prix <- [35, 120, 15, 250, 85, 49]
+    budget_max : REEL
+    total_articles_achetables : ENTIER
+
+    debut
+    afficher("Entrer votre budget maximal : ")
+    choix(budget_max)
+    afficher("Votre budget maximal est de : ", budget_max,"€")
+    total_articles_achetables <- 0
+
+        pour i ALLANT DE 0 A 5 faire
+            si prix[i] > budget_max alors
+                afficher("L'article N°",i,"Dépasse votre budget car son pris est de : ",prix[i],"€")
+            sinon
+                afficher("L'article N°",i,"est dans votre budget car son pris est de : ",prix[i],"€")
+            fin si
+            si prix[i] <= budget_max alors
+                total_articles_achetables <- total_articles_achetables + 1
+                afficher(total_articles_achetables,"sont achetables avec votre budget")
+            fin si
+        fin pour
+
+#Exercice 4
+
+Variables
+    codes_bannis <- ["0000", "1234", "1111", "9999"]
+    pin_utilisateur : ENTIER
+
+    debut
+        afficher("Veuillez entrer un code pin à 4 chiffres : ")
+        choix(pin_utilisateur)
+        tant que 
