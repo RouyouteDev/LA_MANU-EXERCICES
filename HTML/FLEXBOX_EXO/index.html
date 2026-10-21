@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 0;
+        }
+        div{
+            display: flex;
+            border: 1px solid black;
+        }
+        #top-container {
+            width: 100%;
+            height: 10vh;
+            border-width: 2px;
+        }
+        #sidebar {
+            width: calc(100%/3);
+            height: 10vh;        }
+        #container {
+            width: calc(100%/3);
+            height: 10vh;
+        }
+        #content {
+            width: calc(100%/3);
+            height: 10vh;
+        }
+        #bottom-container {
+            width: 100%;
+            height: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercice D'introduction Aux Flexbox</h1>
+    <div id="top-container">
+    </div>
+    <div>
+        <div id="container">
+        </div>
+        <div id="sidebar"></div>
+        <div id="content"></div>
+    </div>
+    <div id="bottom-container"></div>
+    
+</body>
+</html>

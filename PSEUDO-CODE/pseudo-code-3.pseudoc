@@ -1,0 +1,64 @@
+ALGORITHME / Boucles et Listes (Listes et Tableaux) - PARTIE 2
+
+
+// --- VARIABLES --- //
+VARIABLES:
+    note_max : ENTIER
+    note_min : ENTIER
+	notes : LISTE
+    moyennne : REEL
+    compteur : ENTIER
+
+
+// --- 1. Calcul de la moyenne --- //
+
+debut:
+    compteur <- 0
+    moyenne <- 0
+    notes <- [12, 20, 15, 9, 3]
+
+    pour i allant de 0 a 4:
+        compteur <- compteur + 1
+        moyenne <- moyenne + notes[i]
+    moyennne <- moyenne / compteur
+
+
+    afficher("La moyenne générale de la classe est de:", moyenne)
+fin
+
+
+
+// --- 2. Calcul de la note maximale et minimale --- //
+
+debut:
+    note_max <- notes[0]
+    note_min <- notes[0]
+    notes <- [12, 20, 15, 9, 3]
+
+    pour i allant de 0 a 4:
+        si notes[i] > note_max ALORS
+            note_max <- notes[i]
+        fin si
+
+        si notes[i] < note_min ALORS
+            note_min <- notes[i]
+        fin si
+
+    afficher("La note maximale de la classe est de:", note_max)
+    afficher("La note minimale de la classe est de:", note_min)
+
+fin
+
+// --- 3. Le nombre d'étudiants ajournés | tests ratés --- //
+
+debut:
+    compteur <- 0
+    notes <- [12, 20, 15, 9, 3]
+
+    pour i allant de 0 a 4:
+        si notes[i] < 10 ALORS:
+            compteur <- compteur + 1
+        fin si
+
+    afficher("Le nombre d'étudiants ajournés est de:", compteur)
+fin

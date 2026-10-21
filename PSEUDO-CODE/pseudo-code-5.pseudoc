@@ -1,0 +1,33 @@
+VARIABLES
+    code_bannis <- ["1234", "0000", "1111", "9999"] // La liste des codes interdits
+    code_valide : BOOLEEN
+    mdp_utilisateur : CHAINE DE CARACTERE
+    est_banni : BOOLEEN                             // Nouvelle variable booléenne dédiée
+    i : ENTIER
+
+DEBUT
+    code_valide <- faux                             // Correction : on commence à faux pour entrer dans la boucle
+    
+    tant que code_valide == faux faire
+        afficher("Veuillez entrer un code pin à 4 chiffres")
+        choix(mdp_utilisateur)
+
+        si longueur(mdp_utilisateur) != 4 alors
+            afficher("Erreur : Le code doit avoir exactement 4 caractères, pas plus ni moins svp!")
+        sinon
+            est_banni <- faux                       // On initialise l'état banni à faux pour chaque tentative
+            pour i allant de 0 a 3 faire
+                si mdp_utilisateur == code_bannis[i] alors
+                    est_banni <- vrai
+                fin si
+            fin pour
+
+            si est_banni == vrai alors
+                afficher("Votre mot de passe ne respecte pas les règles veuillez recommencer svp!")
+            sinon
+                afficher("Votre mot de passe est valide !")
+                code_valide <- vrai                 // Sortira de la boucle au prochain tour
+            fin si
+        fin si
+    fin tant que
+FIN

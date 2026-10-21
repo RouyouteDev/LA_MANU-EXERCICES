@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@1,700;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --font-family: 'Iosevka Charon', monospace;
+    --font-family-ubuntu: "Ubuntu", sans-serif;
+    --background-color: #0D1C42;
+    --text-color: #FCF1D0;
+    --header-background-color: #010736;
+    --header-text-color: rgb(235 235 7);
+    --button-background-color: #010736;
+    --button-hover-background-color: #020d5c;
+}
+
+* {
+    color : var(--text-color);
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    padding-bottom: 80px; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.bold {
+  font-family: 'Iosevka Charon', monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bold-et-italic {
+  font-family: 'Iosevka Charon', monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+header {
+    box-shadow: 0px 0px 30px #010736;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    margin: 0;
+    padding-left: 40px;
+    height: 50px;
+    
+    background-color: var(--header-background-color);
+    align-items: center;
+    
+    a {
+        color: #a08a48;
+        margin-left: 5px;
+    }
+    ul {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: -10px;
+    }
+    li {
+        font-style: italic;
+        color: var(--text-color);
+        display: flex; 
+        list-style: none;
+        font-size: 30px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .separateur {
+            font-style: normal;
+        }
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    #nav-links {
+        font-family: var(--font-family-ubuntu);
+    }
+}
+
+main{
+    font-family: var(--font-family);
+    display: flex;
+    margin: 40px;
+    margin-top: 80px;
+}
+#intro {
+    width: calc(100%/2);
+    height: auto;
+    margin-right: 250px;
+    margin-top: -40px;
+    
+    h2 {
+        font-size: 60px;
+    }
+    p {
+        margin-top: -40px;
+        font-size: 20px;
+    }
+    button {
+        padding: 11px 33px;
+        text-decoration: none;
+        font-size: 19px;
+        color: white;
+        background: #6225e6;
+        box-shadow: 6px 6px 0 black;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+        font-style: italic;
+    }
+    button:hover{
+        transition: 1s ease;
+        box-shadow: 6px 6px 0 black,0 0 10px  #dedfe4;
+    }
+}
+
+#skills {
+    border: 1px none #dedfe4;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #151a34;
+    background-color: #151a34;
+    padding: 20px 15px;
+    width: calc(100%/4);
+    height: auto;
+    img:hover{
+        transition: 0.4s ease;
+        box-shadow: 0px 0px 30px #dedfe4;
+    }
+}
+
+#skills-container{
+    width: 100%;
+    height: auto;
+}
+
+#container-langagesdeprog{
+    width:100%;
+    height: auto;
+}
+
+
+footer p{
+    box-shadow: 0px 0px 30px #010736;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    margin: 0;
+    padding-left: 40px;
+    height: 50px;
+    
+    background-color: var(--header-background-color);
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: #a08a48;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,37 @@
+body {
+    background-color: beige;
+    margin-left: 270px;
+    margin-right: 270px;     
+}
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: none;
+    border: none;
+    background: linear-gradient(#569937, #00ff00);
+}
+
+#submit:hover {
+    transform: translate(200px);
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+body :hover{
+    transform: translate(500px);
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}

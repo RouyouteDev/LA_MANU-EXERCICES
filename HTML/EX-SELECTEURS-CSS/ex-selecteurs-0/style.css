@@ -1,0 +1,111 @@
+/*
+INSTRUCTIONS - PRA 3 :
+Déclarez vos variables CSS globales (couleurs, polices) au sommet (:root).
+Ajoutez les sélecteurs CSS appropriés devant chaque bloc de propriétés
+en respectant les contraintes (pas de modification du HTML, utilisation de
+sélecteurs fins, enfants directs, pseudo-classes, etc.).
+*/
+/* 1. Variables globales et Sélecteur universel */
+* {
+    --primary-color: #1a1a2e;
+    --accent-color: #e94560;
+    --text-color: #eaeaea;
+    --bg-color: #0f3460;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 2. Sélecteur de balise : Corps de la page  */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/* 3. Sélecteur de balise : En-tête principal */
+header {
+    background: linear-gradient(135deg, #0f3460, #e94560);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+}
+/* 4. Sélecteur de classe : Conteneurs de sections */
+.patch-section {
+    background-color: #16213e;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+/* 5. Sélecteur d'ID : Section d'annonce spécifique */
+#annonces {
+    background-color: #222b45;
+    border-left: 5px solid #f39c12;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 4px;
+}
+/* 6. Sélecteur descendant : Titres à l'intérieur des sections */
+section h2{
+    color: var(--accent-color);
+    border-bottom: 2px solid #0f3460;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+/* 7. Sélecteur d'enfant direct : Paragraphes directement enfants du header */
+header > p{
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+/* 8. Sélecteur de frère adjacent : Paragraphe venant immédiatement après un titre h2 dans les sections */
+h2 + p{
+    font-style: italic;
+    color: #a0aec0;
+    margin-bottom: 15px;
+}
+/* 9. Sélecteur de classe combinée ou d'attribut : Paragraphe d'alerte urgent */
+.urgent{
+    color: #e74c3c;
+    font-weight: bold;
+}
+/* 10. Sélecteur d'attribut : Liens possédant l'attribut "target" */
+a[target]{
+    color: #3498db;
+    text-decoration: none;
+}
+/* 11. Sélecteur d'attribut avec valeur spécifique : Liens avec data-type="pdf" */
+a[data-type="pdf"]{
+    color: #e74c3c;
+    font-weight: bold;
+}
+/* 12. Pseudo-classe :hover sur les liens */
+a:hover{
+    text-decoration: underline;
+    filter: brightness(1.2);
+}
+/* 13. Pseudo-classe de position :first-child (premier élément de liste) */
+ul :first-child{
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+}
+/* 14. Pseudo-classe de position (éléments de liste de rang pair) */
+ul:nth-of-type(even){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* 15. Sélecteurs de formulaires (champs de saisie au focus) */
+input:focus{
+    border: 2px solid var(--accent-color);
+    outline: none;
+    background-color: #1a1a2e;
+    color: white;
+}
+/* 16. Pseudo-classe sur le bouton de formulaire quand il est désactivé */
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #555;
+}

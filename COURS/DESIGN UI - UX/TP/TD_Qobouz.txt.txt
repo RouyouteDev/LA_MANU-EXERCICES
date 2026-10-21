@@ -1,0 +1,18 @@
+Contexte : 
+Nous souhaitons développer "Qobouz", une nouvelle application mobile de streaming musical axée sur la découverte de nouveaux artistes. L'objectif est de proposer une expérience utilisateur fluide, intuitive et visuellement engageante.
+
+Votre Mission : 
+Votre mission est de Créer un wireframe haute-fidélité et de prototyper les interactions clés pour donner vie à l'expérience. 
+Vous devrez démontrer votre maîtrise des principes de l'UI design et du prototypage.
+
+Tâches Détaillées :
+Design de l'Interface (UI) :
+Réfléchissez à tous les écrans qui vous sont nécessaires pour ce genre d'application.
+Dans chaque écran, des éléments sont sûrement réutilisables, pensez à créer des composants. 
+Des overlays sont possibles pour des actions annexes (menu de paramètre/ recherche) 
+Prototypage des Interactions :
+Créez un prototype interactif à partir de vos maquettes.
+Implémentez les interactions et les transitions essentielles pour simuler une navigation réaliste, notamment :
+Le passage de l'écran d'accueil à l'écran lecteur lors d'un clic sur une chanson.
+L'animation de mise en lecture/pause.
+La transition vers l'écran de recherche.
