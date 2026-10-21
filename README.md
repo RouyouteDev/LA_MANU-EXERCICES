@@ -13,9 +13,6 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 ---
 
 ## 💻 DEV
-
-Tout le code et les cours de développement sont dans [DEV/](./DEV).
-
 ### 🌐 HTML / CSS
 
 Dossier : [DEV/HTML-CSS](./DEV/HTML-CSS)
