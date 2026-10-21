@@ -10,7 +10,6 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 - [🖌️ Design UI/UX](#️-design-uiux)
 - [🗂️ Structure du dépôt](#️-structure-du-dépôt)
 
----
 
 ## 💻 DEV
 ### 🌐 HTML / CSS
