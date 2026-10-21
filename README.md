@@ -17,17 +17,6 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 
 Dossier : [DEV/HTML-CSS](./DEV/HTML-CSS)
 
-#### 📖 Cours & TD — [1-COURS](./DEV/HTML-CSS/1-COURS)
-
-| Type | Contenu |
-|------|---------|
-| Cours HTML | [HTML.pdf](./DEV/HTML-CSS/1-COURS/HTML.pdf) |
-| Cours CSS | [Partie 1](./DEV/HTML-CSS/1-COURS/%5BCSS%5DPartie%201.pdf) |
-| Cours CSS | [Cascade & modèle de boîte](./DEV/HTML-CSS/1-COURS/%5BCSS%5DCascade%20%26%20Mod%C3%A8le%20de%20boite.pdf) |
-| Cours CSS | [Layout Flex (Flexbox)](./DEV/HTML-CSS/1-COURS/%5BCSS%5DLayout%20Flex.pdf) |
-| TD CSS | [Modèle de boîte](./DEV/HTML-CSS/1-COURS/TD/Mod%C3%A8le%20de%20boite) |
-| TD CSS | [Sélecteurs](./DEV/HTML-CSS/1-COURS/TD/Selecteurs) |
-
 #### 🛠️ Projets & exercices
 
 Chaque dossier contient un `index.html` à ouvrir dans le navigateur.
@@ -52,16 +41,6 @@ Chaque dossier contient un `index.html` à ouvrir dans le navigateur.
 
 Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
 
-#### 📖 Cours & TP — [1-COURS](./DEV/PSEUDO-CODE/1-COURS)
-
-| Type | Contenu |
-|------|---------|
-| Cours | [Basics & pseudo-code](./DEV/PSEUDO-CODE/1-COURS/%5BALGO%5DBasics%20%26%20Pseudo%20code.pdf) |
-| Cours | [Boucles et listes](./DEV/PSEUDO-CODE/1-COURS/%5BALGO%5DBoucle%20et%20Liste.pdf) |
-| TP | [TP 1 – Calculateur billet SNCF](./DEV/PSEUDO-CODE/1-COURS/TP/TP_1_Calculateur%20billet%20sncf.pdf) |
-| TP | [TP 2 – Boucles et listes](./DEV/PSEUDO-CODE/1-COURS/TP/TP_2_Boucles%20et%20listes.pdf) |
-| TP | [Sujet A](./DEV/PSEUDO-CODE/1-COURS/TP/%5BALGO%5DSujet%20A.pdf) |
-
 #### ✍️ Mes algorithmes
 
 | Fichier | Sujet |
@@ -75,22 +54,10 @@ Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
 ---
 
 ## 🖌️ Design UI/UX
+#### 🎨 Mes maquettes Figma
 
 Dossier : [DESIGN UI - UX](./DESIGN%20UI%20-%20UX)
 
-| Type | Contenu |
-|------|---------|
-| Cours | [Design UX-UI](./DESIGN%20UI%20-%20UX/Cours/Design_UX-UI.pdf) |
-| Cours | [Persona](./DESIGN%20UI%20-%20UX/Cours/Persona.pdf) |
-| Cours | [Figma – bases](./DESIGN%20UI%20-%20UX/Cours/Figma%20bases%20-%20B1.pdf) |
-| TD | [Copycat (énoncé)](./DESIGN%20UI%20-%20UX/Cours/TD/TD_copycat.pdf) · [maquette](./DESIGN%20UI%20-%20UX/Cours/TD/TD_copycat_maquette.jpg) |
-| TD | [Instant Gaming (énoncé)](./DESIGN%20UI%20-%20UX/Cours/TD/TD%20instant%20gaming%20.pdf) |
-| TD | [Qobouz (énoncé)](./DESIGN%20UI%20-%20UX/Cours/TD/TD_Qobouz.txt.txt) |
-| TP | [Persona](./DESIGN%20UI%20-%20UX/Cours/TP/personna.pdf) |
-| TP | [Campus Flow (énoncé)](./DESIGN%20UI%20-%20UX/Cours/TP/TP_Campus_flow_%C3%A9nonc%C3%A9.pdf) |
-| TP | [Rendu Copycat](./DESIGN%20UI%20-%20UX/Cours/TP/copycat.png) |
-
-#### 🎨 Mes maquettes Figma
 
 | Fichier | Sujet |
 |---------|-------|
