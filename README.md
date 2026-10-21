@@ -7,18 +7,16 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 ## 🧭 Sommaire
 
 - [💻 DEV](#-dev)
-- [🖌️ Design UI/UX](#️-design-uiux)
-- [🗂️ Structure du dépôt](#️-structure-du-dépôt)
+- [🖌️ Design UI/UX](#design-uiux)
 
+---
 
 ## 💻 DEV
-### 🌐 HTML / CSS
 
-Dossier : [DEV/HTML-CSS](./DEV/HTML-CSS)
+### 🌐 HTML / CSS  |  Dossier : [DEV/HTML-CSS](./DEV/HTML-CSS)
 
-#### 🛠️ Projets & exercices
-
-Chaque dossier contient un `index.html` à ouvrir dans le navigateur.
+<details>
+<summary><b>🛠️ Projets & exercices (cliquer pour dérouler)</b></summary>
 
 | Projet | Description | Thèmes travaillés |
 |--------|-------------|-------------------|
@@ -34,13 +32,13 @@ Chaque dossier contient un `index.html` à ouvrir dans le navigateur.
 | [PRA_INSTANT_GAMING](./DEV/HTML-CSS/PRA_INSTANT_GAMING) | Reproduction de la page d'accueil d'Instant Gaming | Intégration, CSS |
 | [PORTFOLIOv0](./DEV/HTML-CSS/PORTFOLIOv0) | Première version de mon portfolio (déployé avec Firebase) | Projet complet, 404, déploiement |
 
----
+</details>
 
-### 🧠 Pseudo-code & algo
 
-Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
+### 🧠 Pseudo-code & algo  |  Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
 
-#### ✍️ Mes algorithmes
+<details>
+<summary><b>✍️ Mes algorithmes (cliquer pour dérouler)</b></summary>
 
 | Fichier | Sujet |
 |---------|-------|
@@ -50,13 +48,15 @@ Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
 | [pseudo-code-4](./DEV/PSEUDO-CODE/pseudo-code-4.pseudoc) | Boucles et listes |
 | [pseudo-code-5](./DEV/PSEUDO-CODE/pseudo-code-5.pseudoc) | Saisie d'un code PIN (liste de codes interdits) |
 
+</details>
+
 ---
 
-## 🖌️ Design UI/UX
-#### 🎨 Mes maquettes Figma
+<a id="design-uiux"></a>
+## 🖌️ Design UI/UX  |  Dossier : [DESIGN UI - UX](./DESIGN%20UI%20-%20UX)
 
-Dossier : [DESIGN UI - UX](./DESIGN%20UI%20-%20UX)
-
+<details>
+<summary><b>🎨 Mes maquettes Figma (cliquer pour dérouler)</b></summary>
 
 | Fichier | Sujet |
 |---------|-------|
@@ -66,25 +66,8 @@ Dossier : [DESIGN UI - UX](./DESIGN%20UI%20-%20UX)
 
 > 💡 Les fichiers `.fig` s'ouvrent dans [Figma](https://www.figma.com/)
 
----
-
-## 🗂️ Structure du dépôt
-
-```
-.
-├── DEV/
-│   ├── HTML-CSS/
-│   │   ├── 1-COURS/         → Cours HTML/CSS + TD
-│   │   └── <projets>/       → Un dossier par projet / exercice
-│   └── PSEUDO-CODE/
-│       ├── 1-COURS/         → Cours algo + TP
-│       └── *.pseudoc        → Mes algorithmes
-└── DESIGN UI - UX/
-    ├── Cours/               → Cours, TD et TP
-    └── *.fig                → Maquettes Figma
-```
+</details>
 
 ---
-
 
 *Dernière mise à jour : 21 octobre 2026*
