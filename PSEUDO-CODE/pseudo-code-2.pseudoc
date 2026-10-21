@@ -1,0 +1,18 @@
+ALGORITHME / Boucles et Listes (Listes et Tableaux)
+
+VARIABLES:
+	produits : LISTE
+
+debut:
+    produits <- ["Clavier Gamer", "Casque Sans Fil", "Souris Ergonomique", "Ecrant 27 Pouces", "Tapis de Souris"]
+    afficher("Le produit souris ergonomique est a l'index : 2")
+    
+    afficher("Element dans la liste produits dans l'ordre")
+    pour i allant de 0 a 4:
+        afficher("Element d'index", i, ":", produits[i])
+
+    afficher("Element dans la liste produits dans l'ordre inverse")
+    pour i allant de 4 a 0 avec un pas de -1:
+        afficher("Element d'index", i, ":", produits[i])
+
+fin

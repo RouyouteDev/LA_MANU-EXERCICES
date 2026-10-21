@@ -1,0 +1,521 @@
+@import url('https://fonts.cdnfonts.com/css/microsoft-sans-serif');
+
+* {
+    font-family: 'Microsoft Sans Serif', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+header {
+    display: flex;
+    background-image: url("background-img.png");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+
+    figure#logo {
+        width: 25%;
+        height: 10vh;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    figure#icons {
+        width: 25%;
+        height: 10vh;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 20px;
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    nav{
+        width: 50%;
+        height: 10vh;
+        color: white;
+        text-align: center;
+        li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 30px;
+        }
+        ul#menu{
+            position:absolute;
+            top: 10px;
+            left: calc(100%/3); 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #liquid-glass{
+            border-radius: 5000px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            backdrop-filter: blur(2px) brightness(0.8);
+            /* EFFET PR LE LIQUID GLASS */
+        }
+        img#search-icon{
+            position: absolute;
+            top: 40px;
+            left: 758px;
+            background: linear-gradient(10deg, #ffac15, #ff3131);
+            border-radius: 5000px;
+            padding: 22px;
+        }
+        ul#menu-plateformes{
+            font-size: 20px;
+            white-space: nowrap;
+            /*pas retour ligne*/
+            position: relative;
+            top: 25%;
+            left: -10%px;
+            padding: 40px;
+            width:100%;
+            margin: 0 auto;
+            img{
+                height: 30px;
+                width: 30px;
+                margin-right: 5px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+#container-tendances{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    #container-tendances-title{
+        width: 50%;
+        height: 100%;
+        text-align: left;
+    }
+    #container-tendances-button{
+        width: 50%;
+        height: 100%;
+        text-align: right;
+    }
+}
+button{
+    background-color: rgb(61,61,61);
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+div#container-row-1{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div#container-row-2{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div#container-row-3{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-last{
+    figure{
+        img{
+            width:300px;
+            height:165px;
+            border-radius: 10px;
+            margin-bottom: -30px;
+        }
+        img#plat{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            bottom: 140px;
+            left: 5%;
+        }
+        figcaption#reduc{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(255, 89, 0);
+            border-radius: 45px;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            bottom: 40px;
+            right: 4%;
+        }
+    }
+    margin-right: 20%;
+}
+
+.card{
+    margin-right: 10%;
+    figure{
+        img{
+            width:300px;
+            height:165px;
+            border-radius: 10px;
+            margin-bottom: -30px;
+        }
+        img#plat{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            bottom: 140px;
+            left: 5%;
+        }
+        figcaption#reduc{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(255, 89, 0);
+            border-radius: 45px;
+            padding: 2px;
+            text-align: center;
+            position: relative;
+            bottom: 40px;
+            right: 4%;
+        }
+        li:last-child{
+            margin-left: 35%;
+        }
+        ul{
+            position:relative;
+
+        }
+    }
+}
+ul {
+    display: flex;
+    list-style: none;             
+    padding: 0;
+}
+
+section#bar-cheloue{
+    background-color: rgb(0, 0, 0);
+    height: 18vh;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    
+
+    .container-bar-cheloue{
+        margin: auto auto;
+    }
+    div.container-bar-cheloue-img{
+        margin-right: 10px;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+    }
+    div.container-bar-cheloue-txt{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+#container-precommandes{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    #container-precommandes-title{
+        width: 50%;
+        height: 100%;
+        text-align: left;
+    }
+    #container-precommandes-button{
+        width: 50%;
+        height: 100%;
+        text-align: right;
+    }
+}
+div#container-row-1-precommandes{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div#container-row-2-precommandes{
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        
+    .card-last{
+        figure{
+            img{
+                width:300px;
+                height:165px;
+                border-radius: 10px;
+                margin-bottom: -30px;
+            }
+            img#plat{
+                width: 35px;
+                height: 35px;
+                position: relative;
+                bottom: 140px;
+                left: 5%;
+            }
+            figcaption#reduc{
+                width: 50px;
+                height: 20px;
+                background-color: rgb(255, 89, 0);
+                border-radius: 45px;
+                padding: 2px;
+                text-align: center;
+                position: relative;
+                bottom: 40px;
+                right: 4%;
+            }
+        }
+        margin-right: 50%;
+    }
+}
+
+.precommande{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    margin-bottom: 10%;
+
+    span.precommande-bubble{
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+    }
+}
+
+div#avis{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    background-image: url("bg_clouds-purple.png");
+}
+
+div.container-avis{
+    width: 50%;
+    height: 10vh;
+}
+div#container-avis-txt{
+    width: 45%;
+    height: 10vh;
+    position: relative;
+    bottom: 5%;
+    text-align: center;
+    margin-left: 50%;
+
+    button{
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: rgb(255, 89, 0);
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+div#container-avis-img{
+    margin-left: 15%;
+}
+
+div#row1-avis{
+    display: flex;
+    margin-right: 5%;
+}
+div.card-avis{
+    width: 15%;
+    height: 12vh;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: rgb(61,61,61);
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 13px;
+
+    img{
+        float: left;
+    }
+    p{
+        margin-left: 20px;
+    }
+    p#avis-jsp{
+        position: relative;
+        bottom: 15px;
+        margin-left: 50px;
+    }
+    p:last-child{
+        color: rgb(133, 137, 139);
+        margin-top: 2px;
+    }
+}
+#stars-img{
+    position: relative;
+    bottom: 10px;
+}
+
+div#newsletter{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(46,46,46);
+    height: 30vh;
+    text-align: center;
+    padding-top: 20px;
+    button{
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: rgb(255, 89, 0);
+        border-radius: 10px;
+        padding:15px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    * {
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        color: rgb(133, 137, 139);
+    }
+}
+
+footer{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(22, 22, 22);
+    div#logo-img{
+        width:calc(100%/3);
+        height: 30vh;
+        border-bottom-style: solid;
+        border-color: white;
+        #img1{
+            width: 230px;
+            height: 65px;
+            margin-top:25px;
+            margin-bottom:15px;
+            margin-left: 90px;
+        }
+        #img2{
+            margin-left:90px;
+        }
+    }
+    div#liste-footer{
+        width:calc(100%/3);
+        height: 30vh;
+        border-bottom-style: solid;
+        border-color: white;
+        ul{
+            display:list-item;
+            flex-direction: column;
+            flex-wrap: wrap;
+            li{
+                list-style: none;
+                margin-top: 18px;
+                margin-left: 100px;
+            }
+        }
+    }
+    div#c{
+        width:calc(100%/3);
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        div#ca{
+            width: 100%;
+            height: 15vh;
+            figure{
+                img{
+                    margin-right: 5px;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 100%;
+                    position:relative;
+                    top: 20px;
+                    left:40px;
+                }
+                #twitch{
+                    background-color: rgb(57, 31, 106);
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+        div#cb{
+            img{
+                margin-right: 50px;
+            }
+            text-align: right;
+            width: 100%;
+            height: 15vh;
+            border-bottom-style: solid;
+            border-color: white;
+        }
+    }
+    div#footer-copyright{
+        background-color: rgb(22, 22, 22);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        p{
+            margin-left: 65px;
+            padding: 20px;
+        }
+        li{
+            padding: 20px;
+        }
+    }
+}
+
+#location{
+    filter: brightness(0) invert(1);
+}
+#xbox{
+    filter: brightness(0) invert(1);
+}

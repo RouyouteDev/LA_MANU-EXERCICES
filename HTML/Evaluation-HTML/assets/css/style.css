@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(rgb(230, 100, 101), rgb(145, 152, 229));
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: rgb(189, 27, 27);
+    text-decoration: underline;
+}
+
+header {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 10px;
+
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px;
+    a {
+        color: rgb(129, 54, 54);
+    }
+}
+
+main {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 10px;
+
+    background-color: rgb(51, 51, 51);
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    a {
+        color: rgb(129, 54, 54);
+    }
+}
+
+footer {
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 10px;
+
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    a {
+        color: rgb(223, 208, 208);
+    }
+}
+
+#figure1 {
+    float: left;
+    margin-right: 20px;
+}
+
+#figure2 {
+    float: left;
+    margin-right: 20px;
+}
+
+#figure3 {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#section3 {
+    h2{
+        margin-top: 250px;
+    }
+}
+
+
+input {
+    margin-bottom: 25px;
+}
+fieldset {
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(189, 27, 27);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(41, 82, 112);
+}

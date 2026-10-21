@@ -1,0 +1,216 @@
+/* --------------------------------------------------------------
+Import de la font Montserrat depuis Google Fonts
+-------------------------------------------------------------- */
+/* Commencer par importer le css dans la page HTML */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* --------------------------------------------------------------
+Layout de la page
+-------------------------------------------------------------- */
+
+/* 
+Déclarer le style CSS qui s'applique au corps de la HTML de la page  et ajouter : 
+- un fond blanc.
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 150%;
+  background-color: white;
+}
+
+/* --------------------------------------------------------------
+Header
+-------------------------------------------------------------- */
+
+/*
+Déclarer le style CSS qui s'applique à l'en-tête de cette façon :
+- fond blanc avec une transparence de 10%
+- une bordure en bas de 1 pixel gris #ddd
+- couleur du texte gris #ccc
+- une marge intérieur haut et bas de 2rem
+- une marge intérieur gauche et droite de 0
+*/
+header {
+  background-color: rgba(255, 255, 255, 0.90);
+  border-bottom-style: solid;
+  color: grey;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  position: sticky;
+  top: 0;
+}
+/* 
+Déclarer le style CSS qui s'applique au titre du header de cette façon :
+- aligné au centre
+*/
+header, h1 {
+  text-align: center;
+}
+/* 
+Déclarer le style CSS qui s'applique à la balise span de cette façon :
+- une hauteur de 43px
+- une largeur de 250px 
+- l'image logo-pantone.png en image de background
+*/
+span {
+  width: 250px;
+  height: 43px;
+  display: block;
+  margin: auto;
+  background-image: url("./logo-pantone.png");
+}
+
+/* --------------------------------------------------------------
+Contenu histoire et principe du Pantone
+-------------------------------------------------------------- */
+
+/* 
+Déclarer le style CSS qui s'applique au contenu principal de cette façon :
+- largeur de 60vw
+- marge externe auto pour le centrer
+*/
+main {
+  width: 60vw;
+  margin: auto;
+}
+/* 
+Déclarer le style CSS qui s'applique à l'ensemble des éléments html <mark> :
+- bord arrondi de 3px
+- marge interne horizontal de 0.25rem
+*/
+mark {
+  border-radius: 3px;
+  padding: 0.25rem;
+}
+/* 
+Déclarer le style CSS qui s'applique à chaque class de cette manière :
+- class cyan -> fond de couleur cyan
+- class magenta -> fond de couleur magenta
+- class yellow -> fond de couleur jaune
+- class black -> fond de couleur noir, couleur de texte blanche
+*/
+mark.cyan {
+  background-color: cyan;
+}
+mark.magenta {
+  background-color: magenta;
+}
+mark.yellow {
+  background-color: yellow;
+}
+mark.black {
+  background-color: black;
+}
+
+/* --------------------------------------------------------------
+Styles pantone of the year
+-------------------------------------------------------------- */
+
+/*
+Déclarations CSS qui permet d'organiser tous les éléments HTML 
+contenant les informations sur le Pantone de l'année sous forme de grille 
+Ajouter le bon selecteur
+*/
+
+.pantone-of-the-year-list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* 
+Déclarations CSS qui doivent appliquer une mise en forme 
+à tous les titres des blocs Pantone de l'année 
+    Ajouter le bon selecteur ainsi que les propriétés suivante :
+    - hauteur 2.5rem
+    - fond noir
+    - couleur de texte blanche
+    - taille de texte 3rem
+    - marge interne 0.25em 
+*/
+
+h2.pantone-of-the-year-list, h3.pantone-of-the-year-list {
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  padding: 0.25em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+/* 
+Déclarer le style CSS qui s'applique 
+à toutes les références des blocs Pantone de l'année :
+    - taille du texte de 0.75rem
+    - épaisseur du texte en gras
+    - texte centré 
+*/
+
+.pantone-of-the-year-list {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 
+Déclarer le style CSS qui s'applique à toutes les descriptions des blocs Pantone de l'année
+   - taille de texte 0.75em
+   - hauteur de ligne 1.25em
+   - alignement du texte justifié
+*/
+
+.pantone-of-the-year-item .ref + p {
+  font-size: 0.75em;
+  line-height-step: 1.25em;
+  text-align: center;
+}
+
+/* 
+Déclarer le style CSS qui s'applique au titre du bloc pantone de l'année 2020 :
+- couleur de fond hexa : 0f4c81
+*/
+.pantone-of-the-year-item-year-2020{
+  color: #0f4c81;
+}
+
+/* 
+Déclarer le style CSS qui s'applique au titre du bloc pantone de l'année 2019 :
+- couleur de fond hexa : ff6f61
+*/
+.pantone-of-the-year-item-year-2019 {
+  color: #ff6f61;
+}
+
+/* 
+Déclarer le style CSS qui s'applique au titre du bloc pantone de l'année 2018 :
+- couleur de fond hexa : 604c8d
+*/
+.pantone-of-the-year-item-year-2018 {
+  color: #604c8d;
+}
+
+/* 
+Déclarer le style CSS qui s'applique au titre du bloc pantone de l'année 2017 :
+- couleur de fond hexa : 88b04b
+*/
+.pantone-of-the-year-item-year-2017 {
+  color: #88b04b;
+}
+
+/* 
+Déclarer le style CSS qui s'applique au titre du bloc pantone de l'année 2016 
+*/
+.pantone-of-the-year-item-year-2016 {
+  background: rgb(147, 169, 209);
+  background: linear-gradient(90deg, rgba(147, 169, 209, 1) 0%, rgba(147, 169, 209, 1) 50%, rgba(247, 202, 202, 1) 50%, rgba(247, 202, 202, 1) 100%);
+}
+
+/* BONUS : faire en sorte que la couleur des titres des blocs 
+Pantone de l'année deviennent de la couleur associée au survol des blocs */

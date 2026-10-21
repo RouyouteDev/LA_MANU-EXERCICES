@@ -1,0 +1,67 @@
+ALGORITHME / Boucles et Listes (Listes et Tableaux)
+
+// --- VARIABLES --- //
+VARIABLES:
+    prix : REEL
+    budget_max : REEL
+    nbr_articles : ENTIER
+    tableau_ranger : LISTE DE REEL
+    elt_achetable : REEL
+
+
+
+DEBUT:
+    afficher("Entrez votre budget maximum au centime près:")
+    choix(budget_max)
+
+
+    tableau <- [35, 120, 15, 250, 85, 49]
+    pour chaque prix dans tableau:
+        si prix <= budget_max ALORS
+            afficher("Article a prix de:", prix, "Abordable")
+        sinon
+            afficher("Article a prix de:", prix, "Trop Cher")
+        fin si
+    fin pour
+fin
+
+
+// fonction qui range dans l'ordre croissant les articles//
+
+debut fonction trier_tableau (tableau: LISTE DE REEL) -> LISTE DE REEL
+    tableau_trie <- []
+    pour chaque element dans tableau:
+        si tableau == []
+            fin fonction
+        sinon
+            pour chaque element_trie dans tableau_trie:
+                si element < element_trie ALORS
+                    inserer element a la position i dans tableau_trie
+                fin si
+            fin pour
+        fin si
+    fin pour
+    RETOURNER tableau_trie
+fin fonction
+
+
+// liste qui range dans l'odre croissant les articles//
+debut:
+    tableau <- [35, 120, 15, 250, 85, 49]
+    tableau_ranger <- []
+    tableau_ranger <- trier_tableau(tableau)
+    pour chaque prix dans le tableau:
+        afficher("Article a prix de:", prix)
+    fin pour
+fin
+
+// fonction qui permet de calculer le nombre max d'articles achetables //
+debut:
+    tableau <- [35, 120, 15, 250, 85, 49]
+    pour chaque prix dans tableau:
+        si prix <= budget_max ALORS
+            elt_achetable <- prix
+            nbr_articles <- nbr_articles + 1
+        fin si
+    fin pour
+fin
