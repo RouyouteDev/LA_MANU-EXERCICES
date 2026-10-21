@@ -14,6 +14,8 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 ## 💻 DEV
 
 ### 🌐 HTML / CSS  |  Dossier : [DEV/HTML-CSS](./DEV/HTML-CSS)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 <details>
 <summary><b>🛠️ Projets & exercices (cliquer pour dérouler)</b></summary>
@@ -36,6 +38,7 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 
 
 ### 🧠 Pseudo-code & algo  |  Dossier : [DEV/PSEUDO-CODE](./DEV/PSEUDO-CODE)
+![Pseudo-code](https://img.shields.io/badge/Pseudo_Code-7A7A7A?style=for-the-badge&logo=codeforces&logoColor=white)
 
 <details>
 <summary><b>✍️ Mes algorithmes (cliquer pour dérouler)</b></summary>
@@ -54,6 +57,7 @@ Dépôt où j'organise mes cours, TD, TP et projets de formation (HTML/CSS, algo
 
 <a id="design-uiux"></a>
 ## 🖌️ Design UI/UX  |  Dossier : [DESIGN UI - UX](./DESIGN%20UI%20-%20UX)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 <details>
 <summary><b>🎨 Mes maquettes Figma (cliquer pour dérouler)</b></summary>
