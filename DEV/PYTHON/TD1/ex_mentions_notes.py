@@ -1,6 +1,6 @@
 note = float(input("Entrez la note: "))
 
-if note == 18:
+if note >= 18:
     print("Très Bien!")
 elif note >= 16:
     print("Bien")
