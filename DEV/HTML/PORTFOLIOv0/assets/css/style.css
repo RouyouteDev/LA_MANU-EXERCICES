@@ -29,15 +29,15 @@ a {
 }
 
 .bold {
-  font-family: 'Iosevka Charon', monospace;
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Iosevka Charon', monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .bold-et-italic {
-  font-family: 'Iosevka Charon', monospace;
-  font-weight: 700;
-  font-style: italic;
+    font-family: 'Iosevka Charon', monospace;
+    font-weight: 700;
+    font-style: italic;
 }
 
 header {
