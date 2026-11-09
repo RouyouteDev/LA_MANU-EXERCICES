@@ -1,0 +1,122 @@
+
+@media screen and (min-width: 1200px){
+    header{
+        padding: 1%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: 20px;
+        }
+        svg#burgerMenu{
+            width: 6wh;
+            height: 6vh;
+        }
+    }
+    nav{
+        width: 60%;
+        ul{
+            font-size: 0; /*ON VA LE FAIRE REAPARAITRE AVEC DU JS AU CLIQUE POUR TELEPHONE*/
+        }
+    }
+    body{
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+            #top-section {
+                grid-column: 1 / -1;
+                grid-row: 1;
+            }
+            section:not(#top-section) {
+                margin-bottom: 5%;
+                margin-left: 5%;
+                margin-right: 5%;
+                grid-column: span 1;
+                display: grid;
+            }
+        }
+        section{
+            margin-right:2.5%;
+            margin-left: 2.5%;
+            margin-top: 5%;
+            section:not(#top-section){
+                display: grid;
+            }
+            h1, h2, .cmd-lines, p{
+                margin: 2% 4%;
+            }
+            h2{
+                font-size: 0.8rem;
+            }
+        }
+        #top-section{
+            display: block;
+            margin-top: 3%;
+            margin-bottom: 0%;
+            #intro-txt{
+                font-size: 1rem;
+            }
+            #intro-txt::after{
+                content: " Également sapeur-pompier volontaire depuis 2 ans, je combine assiduité, esprit d'équipe et curiosité technique à travers mes projets de développement et mes passions (musique, sport et informatque).";
+            }
+            #actions-list{
+                margin-left: 0%;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    font-size: 0.8rem;
+                    margin-bottom: 2%;
+                    margin-left: 4%;
+                    margin-right: 5px;
+                    padding: 10px;
+                }
+            }
+            #head-top-section{
+                padding: 1%;
+                font-size: 15px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    margin: 0px;
+                    margin-left: 2vw;
+                }
+                ul.circles{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin-right: 5px;
+                        padding: 5px;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .sections-list{
+        li{
+            font-size: 0.8rem;
+            margin-left: 4%;
+        }
+        margin-bottom: 2%;
+    }
+    
+    footer{
+        position: relative;
+        bottom: 0vh;
+        left: 0;
+        right: 0;
+        height: 6vh;
+        display: flex;  
+        text-align: center;
+        justify-content: center;
+        padding: 1% 0;
+        li{
+            list-style: none;
+        }
+    }
+}
