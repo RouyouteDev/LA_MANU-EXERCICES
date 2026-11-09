@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de l'aperçu (qui s'affichera en gros et en gras) -->
+    <meta property="og:title" content="Portfolio de Rouyoute">
+    <meta property="og:description" content="Découvrez le portfolio de Wyatt Grenier, jeune apprenant en Bachelor à La Manu.">
+    <!-- <meta property="og:url" content="https://rouyoute-portfolio.web.app"> -->
+    <meta property="og:image" content="https://rouyoute-portfolio.web.app/assets/imgs/icon.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0D1C42">
+    <meta charset="UTF-8">
+    
+    <link rel="icon" type="image/x-icon" href="assets/imgs/icon.png">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index_phone.css">
+    <link rel="stylesheet" href="./assets/css/index_pc.css">
+    <title>Portfolio de GRENIER WYATT</title>
+</head>
+<body>
+    <header>
+        <p><span style="color: yellow;">ROUY</span><span style="color: red;">/</span><span style="color: rgb(217, 224, 232);">OUTE</span>
+        </p>
+        <svg id="burgerMenu" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z"/>
+            <path d="M4 13.9998C4 13.4475 4.44772 12.9997 5 12.9997L16 13C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15L5 14.9998C4.44772 14.9998 4 14.552 4 13.9998Z"/>
+            <path d="M5 19.9998C4.44772 19.9998 4 20.4475 4 20.9998C4 21.552 4.44772 21.9997 5 21.9997H22C22.5523 21.9997 23 21.552 23 20.9998C23 20.4475 22.5523 19.9998 22 19.9998H5Z"/>
+        </svg>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li class="listeelt">$ ls pages/</li>
+            <li class="listeelt" id="actif"><a href="index.html">$ cd ~/a-propos</a></li>
+            <li class="listeelt"><a href=""><span class="yellow-colored">$</span> cd ~/parcours</a></li>
+            <li class="listeelt"><a href=""><span class="yellow-colored">$</span> cd ~/projet</a></li>
+            <li class="listeelt"><a href=""><span class="yellow-colored">$</span> cd ~/contact</a></li>
+        </ul>
+    </nav>
+    <main class="mainContent">
+        <section id="top-section">
+            <div id="head-top-section">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>rouyoute@<strong>portfolio</strong> ~</p>
+            </div>
+            <p class="cmd-lines"><span class="yellow-colored">$</span> whoami</p>
+            <h1>ROUYOUTE<span class="yellow-colored">_</span></h1>
+            <h2>Wyatt Grenier — développement web / design</h2>
+            <p><span class="yellow-colored">$</span> cat about.txt</p>
+            <p id="intro-txt">Jeune apprenant en Bachelor Chef de projet développement et data à <a class="yellow-colored" href="https://lamanu.fr/">La Manu</a> (campus Amiens),
+                actuellement en B1. Passionné par l’informatique, le web et la création d’automatisations pour les tâches
+                répétitives ou pour un gain de confort.</p>
+            <p><span class="yellow-colored">$</span> ./actions.sh</p>
+            <ul id="actions-list">
+                <li class="first"><a href="https://github.com/RouyouteDev" target="_blank">Mes projets (Github)</a></li>
+                <li><a href="assets/doc/2024.04.17CVGRENIERWYATTGENERAL.pdf" download="Grenier Wyatt.pdf">Mon CV (pdf)</a></li>
+                <li><a href="mailto:grenier.wyatt@gmail.com">Me contacter</a></li>
+            </ul>
+        </section>
+        <section>
+            <p><span class="yellow-colored">$</span> ls hobbies/</p>
+            <ul class="sections-list">
+                <li>- Automatisation de tâches en Python</li>
+                <li>- Développement web (Front-End/Back-End)</li>
+                <li>- Sport (course à pied et poids de corps)</li>
+                <li>- Musique (guitariste / bassiste)</li>
+            </ul>
+        </section>
+        <section>
+            <p><span class="yellow-colored">$</span> cat currents_studies.txt</p>
+            <ul class="sections-list">
+                <li><span class="yellow-colored">École</span> La Manu, Amiens</li>
+                <li><span class="yellow-colored">Cursus</span> Bachelor CP Dév. & Data</li>
+                <li><span class="yellow-colored">Niveau</span> B1</li>
+                <li><span class="yellow-colored">Statut</span> sapeur-pompier volontaire</li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Wyatt Grenier Étudiant à La Manu</li>
+            <li><a class="yellow-colored" href="mailto:grenier.wyatt@gmail.com">grenier.wyatt@gmail.com</a></li>
+        </ul>
+    </footer>
+    <script src="./assets/js/burgerMenu.js"></script>
+</body>
+</html>

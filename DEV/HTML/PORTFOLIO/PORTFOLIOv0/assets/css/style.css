@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@1,700;0,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 :root {
     --font-family: 'Iosevka Charon', monospace;
     --font-family-ubuntu: "Ubuntu", sans-serif;
@@ -29,15 +28,15 @@ a {
 }
 
 .bold {
-  font-family: 'Iosevka Charon', monospace;
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Iosevka Charon', monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .bold-et-italic {
-  font-family: 'Iosevka Charon', monospace;
-  font-weight: 700;
-  font-style: italic;
+    font-family: 'Iosevka Charon', monospace;
+    font-weight: 700;
+    font-style: italic;
 }
 
 header {

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    background: linear-gradient(135deg, #4f39d4 0%, #5d46e2 100%);
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #111112;
+    padding: 1vh;
+    color: rgb(177, 169, 169);
+    box-shadow: 5px 5px 5px #6c51d5;
+    display: flex;
+    justify-content:space-between;
+    h1{
+        padding: 10px 10px;
+        img{
+            vertical-align:middle;
+            margin-right: 15px;
+        }
+    }
+    h1:hover{
+        transition: 600ms ease;
+        background-color: #232328;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
+    #btn-header{
+        padding: 15px 10px;
+        button{
+            position: relative;
+            right: 10px;
+            top: 10px;
+            text-align: center;
+            color: white;
+            background-color: #9c99a732;
+            padding: 10px 20px;
+            border-color: #625498;
+            border-style: solid;
+            border-radius: 12px;
+            box-shadow: 2px 4px 2px #322370;
+            
+            .add-img {
+                vertical-align:middle;
+                width: 30px;
+                height: 30px;
+                border-radius: 15%;
+            }
+            
+            &:hover{
+                transition: 1s ease;
+                scale: 1.08;
+            }
+        }
+    }
+}
+
+#trello-app{
+    margin-top:10%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+
+    .column-task-list{
+        padding: 0px 50px;
+        border-style:none;
+        border-radius: 13px;
+        background-color: #00d5fb73;
+        margin-right: 5%;
+
+        .column-task-list-title{
+            position: relative;
+            right: 20%;
+            color: #1c104d8e;
+            font-size: 20px;
+        }
+        
+        .column-task-list-div{
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+    
+        .column-task-list-btn{
+            position: relative;
+            right: 25%;
+            margin-bottom: 10%;
+            color: white;
+            background-color: #00d5fb00;
+            border-style: none;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+    }
+}
