@@ -1,0 +1,90 @@
+@media screen and (min-width: 1200px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid rgb(98, 96, 96);
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            padding: 5px;
+            svg{
+                width: 3vw;
+            }
+        }
+    }
+
+    #navbar ul{
+        display: none;
+    }
+    #navbar.active ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        background-color: rgb(27, 27, 47);
+        li{
+            font-size: 1.25em;
+            list-style: none;
+        }
+    }
+
+    main{
+        .video-container{
+            margin-left: 4%;
+        }
+        .marge-elts{
+            margin: 3% 5%;
+        }
+        h2{
+            font-size: 2em;
+        }
+        text-align: left;
+        .container-grid{
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2%;
+            &:last-child{
+                margin-bottom: 5%;
+            }
+            div{
+                text-align: center;
+                padding: 35px 15px;
+                details, summary, p, h3{
+                    margin-left: 5%;
+                    margin-bottom: 2%;
+                    text-align: left;
+                }
+                details, summary{
+                    margin-left: 3%;
+                }
+                img{
+                    object-fit: cover;
+                    width: 90%;
+                    height: 20vh;
+                    background-color: rgb(119, 119, 136);
+                }
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content:space-evenly ;
+        margin-left: auto;
+        padding: 3%;
+    }
+}
