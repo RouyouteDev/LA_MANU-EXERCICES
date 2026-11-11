@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+
+@media screen and (min-width: 550px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid rgb(98, 96, 96);
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            padding: 5px;
+            svg{
+                width: 3vw;
+            }
+        }
+    }
+
+    #navbar ul{
+        display: none;
+    }
+    #navbar.active ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        background-color: rgb(27, 27, 47);
+        li{
+            font-size: 1.25em;
+            list-style: none;
+        }
+    }
+    
+    main{
+        h2{
+            margin: 2% 5%;
+        }
+        fieldset{
+            width: 90%;
+            height: 75vh;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            .grid{
+                margin-top: 2%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                div{
+                    label, textarea, input{
+                        font-family: 'Space Grotesk', Arial, sans-serif;
+                        margin-left: 4%;
+                    }
+                    textarea, input{
+                        width: 80%;
+                        padding: 10px;
+                    }
+                }
+            }
+            button{
+                margin-top: 2%;
+                margin-left: 2%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1em;
+                width: 10vw;
+                height: 5vh;
+            }
+            .container{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            .big{
+                #message, #subject-message, #email{
+                    width: 88%;
+                }
+                margin-left: -2%;
+                grid-column: 1 /3;
+            }
+            #message{
+                margin-top: -2%;
+                height: 10vh;
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content:space-evenly ;
+        margin-left: auto;
+        padding: 3%;
+    }
+}
