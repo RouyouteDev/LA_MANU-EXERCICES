@@ -30,6 +30,17 @@ main{
     .card{
         padding: 15px;
         margin: 2% 0;
+        p, address{
+            margin-left: 2%;
+        }
+    }
+    h3{
+        margin-bottom: 1%;
+    }
+    .underline{
+        text-decoration: underline;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
     }
     margin: 2% 4%;
 }
@@ -54,4 +65,9 @@ footer{
     justify-content:space-evenly ;
     margin-left: auto;
     padding: 3%;
+}
+
+.card:hover{
+    transition: 0.25s ease-in-out;
+    box-shadow: 5px 5px 5px rgb(1, 1, 52);
 }
