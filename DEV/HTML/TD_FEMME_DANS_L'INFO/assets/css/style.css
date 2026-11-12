@@ -29,12 +29,15 @@ header{
 
 main{
     color: var(--primary);
+    .animation-box div:hover{
+        box-shadow: 5px 5px 5px rgb(1, 1, 60);
+    }
+    .animation-box div{
+        padding: 15px;
+    }
     #discover{
         color: var(--card_bg);
         background-color: var(--btn);
-    }
-    div.grid{
-
     }
     .card{
         border-color: var(--card_border);
@@ -81,4 +84,12 @@ footer{
 
 a:not(.class){
     color: var(--btn);
+}
+
+#white{
+    color: white;
+}
+
+.sources{
+    font-size: 0.8rem;
 }
