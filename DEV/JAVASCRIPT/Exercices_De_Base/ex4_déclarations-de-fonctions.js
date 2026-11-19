@@ -5,11 +5,8 @@ function calculateArea (l, h){
 }
 // console.log(calculateArea(10, 10))
 
-
 // 4.1.1 Réécrivez cette même fonction sous forme de fonction fléchée sur une seule ligne avec un retour implicite.
-const calculateArea2 = (l, h) =>{
-    return l*h;
-}
+const calculateArea2 = (l, h) => l*h;
 // console.log(calculateArea2(5,5))
 
 
@@ -27,14 +24,15 @@ function greetUser(name="Not defined user"){
 // 4.2.2 Écrivez une fonction sumAll(...numbers) qui utilise le paramètre rest pour additionner dynamiquement un nombre infini
 //       de notes passées en arguments. 
 
-function sumAll(ex_numbers){
+function sumAll(message, ...numbers){
     let res = 0;
-    for (let i = 0; i < ex_numbers.length ; i+=1){
-        res += ex_numbers[i]
+    console.log(message)
+    for (let i = 0; i < numbers.length ; i+=1){
+        res += numbers[i]
     }
     return res
 }
-// console.log(sumAll([2,3,10,50]))
+console.log(sumAll(2,3,4,5,6))
 
 // Exercice 4.3 : Compréhension de la portée (Scope) 
 {
