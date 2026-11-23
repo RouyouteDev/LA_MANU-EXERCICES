@@ -1,0 +1,39 @@
+html,
+body,
+#wrapper {
+    height: 100%;
+}
+
+#site-content {
+    flex: 1 0 auto;
+}
+
+#site-header h1 {
+    text-align: center;
+}
+
+#site-content p {
+    width: 50vw;
+    margin: auto;
+}
+
+#site-content img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#site-footer {
+    height: 10vh;
+    background-color: #777;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
