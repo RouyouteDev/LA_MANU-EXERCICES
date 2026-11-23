@@ -1,0 +1,55 @@
+.commande {
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.statut-attente .etiquette-statut {
+  background-color: #fff8c5;
+  color: #7d5700;
+}
+
+.statut-validee .etiquette-statut {
+  background-color: #dafbe1;
+  color: #116329;
+}
+
+.prioritaire {
+  border-color: #0969da;
+  box-shadow: 0 0 0 2px rgba(9, 105, 218, 0.15);
+}
+
+.rupture {
+  opacity: 0.65;
+}
+
+.rupture .nom-article {
+  text-decoration: line-through;
+}
+
+.disponible .etat-article {
+  color: #116329;
+  font-weight: 600;
+}
+
+.remplace .etat-article {
+  color: #9a6700;
+  font-style: italic;
+}
+
+.promo-ligne .nom-article::after {
+  content: " (Offert)";
+  color: #cf222e;
+  font-weight: bold;
+}
+
+.total-ttc .montant-fort {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2328;
+}
+
+.masquee {
+  display: none;
+}
