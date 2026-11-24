@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root{
@@ -115,6 +116,40 @@ body {
                 }
             }
         }
+        .project-card{
+            border-color: rgb(26, 35, 44);
+            border-style: solid;
+            .project-preview{
+                border-radius: 5px;
+            }
+            .action-list{
+                .elt-action{
+                    border-style: solid;
+                    background-color: var(--secondary);
+                    color: var(--bg-top-section);
+                }
+            }
+        }
+    }
+}
+.eltmargin {
+    border-bottom-style: solid ;
+    border-width: 3px;
+    border-color: var(--bg-top-section);
+}
+#btn-submit-form{ 
+    font-family: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+    background-color: var(--secondary);
+    border-style: none;
+    border-radius: 5px;
+}
+.form-fieldset-contact{
+    input, textarea{
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: rgb(26, 35, 44);
+        background-color: var(--bg-top-section);
     }
 }
 
@@ -125,6 +160,12 @@ body {
     }
 }
 
+.exp{    
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 2px;
+}
+
 footer {
     border-top-style: solid;
     border-top-width: 2px;
@@ -133,5 +174,64 @@ footer {
 
     li {
         list-style: none;
+    }
+}
+
+.hero {
+    background-color: var(--secondary);
+    color: var(--bg-body);
+    overflow: hidden;
+
+    a {
+        color: var(--bg-body);
+    }
+
+    .hero-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+
+        #burgerMenu {
+            height: 40px;
+            fill: var(--bg-body);
+            cursor: pointer;
+        }
+    }
+
+    .hero-nav {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-actif {
+        border-bottom: 2px solid var(--bg-body);
+    }
+
+    .hero-name {
+        font-family: 'Big Shoulders Display', sans-serif;
+        font-weight: 900;
+        line-height: 0.85;
+    }
+
+    .hero-actions {
+        list-style: none;
+        display: flex;
+
+        li {
+            border: 2px solid var(--bg-body);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .first {
+            background-color: var(--bg-body);
+        }
+
+        .first a {
+            color: var(--secondary);
+        }
     }
 }
