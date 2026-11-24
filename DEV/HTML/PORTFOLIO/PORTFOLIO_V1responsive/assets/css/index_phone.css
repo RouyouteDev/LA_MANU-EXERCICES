@@ -9,7 +9,6 @@
             font-size: 20px;
         }
         svg#burgerMenu{
-            width: 6wh;
             height: 6vh;
         }
     }
@@ -91,6 +90,39 @@
         padding: 10px 15px;
         li{
             list-style: none;
+        }
+    }
+
+    .hero {
+        padding: 0 5% 30px 5%;
+        .hero-bar {
+            padding: 15px 0;
+            font-size: 0.8rem;
+        }
+        .hero-nav a {
+            margin-right: 15px;
+        }
+        .hero-name {
+            font-size: 32vw;
+            margin-top: 10px;
+        }
+        .hero-name span {
+            display: block;
+        }
+        .hero-bas {
+            margin-top: 25px;
+        }
+        .hero-actions {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .hero-actions li {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .hero-actions a {
+            display: block;
+            padding: 14px;
         }
     }
 }

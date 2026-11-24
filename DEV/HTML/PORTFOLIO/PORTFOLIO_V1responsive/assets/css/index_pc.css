@@ -1,5 +1,4 @@
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 700px){
     header{
         padding: 1%;
         display: flex;
@@ -10,14 +9,13 @@
             font-size: 20px;
         }
         svg#burgerMenu{
-            width: 6wh;
             height: 6vh;
         }
     }
     nav{
         width: 60%;
         ul{
-            font-size: 0; /*ON VA LE FAIRE REAPARAITRE AVEC DU JS AU CLIQUE POUR TELEPHONE*/
+            font-size: 0; /*ON VA LE FAIRE REAPARAITRE AVEC DU JS AU CLIC*/
         }
     }
     body{
@@ -59,7 +57,7 @@
                 font-size: 1rem;
             }
             #intro-txt::after{
-                content: " Également sapeur-pompier volontaire depuis 2 ans, je combine assiduité, esprit d'équipe et curiosité technique à travers mes projets de développement et mes passions (musique, sport et informatque).";
+                content: " Également sapeur-pompier volontaire depuis 2 ans, je combine assiduité, esprit d'équipe et curiosité technique à travers mes projets de développement et mes passions (musique, sport et informatique).";
             }
             #actions-list{
                 margin-left: 0%;
@@ -117,6 +115,38 @@
         padding: 1% 0;
         li{
             list-style: none;
+        }
+    }
+
+    .hero {
+        padding: 0 3%;
+
+        .hero-bar {
+            height: 70px;
+            font-size: 0.9rem;
+        }
+        .hero-nav a {
+            margin-left: 30px;
+        }
+        .hero-name {
+            font-size: 21vw;
+            margin-top: 20px;
+        }
+        .hero-bas {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 30px 0 40px 0;
+        }
+        .hero-sub {
+            font-size: 1.2rem;
+        }
+        .hero-actions li {
+            margin-left: 12px;
+        }
+        .hero-actions a {
+            display: block;
+            padding: 14px 22px;
         }
     }
 }
